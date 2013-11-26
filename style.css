@@ -93,14 +93,6 @@ input {
 	text-align:left;
 }
 
-#content3 {
-	padding: 0 0 100px;
-	color: #FFFFCC;
-	font-size: medium;
-	line-height:150%;
-	text-align:left;
-}
-
 .picture {
     border: 2px solid #FFFFCC;
 }
@@ -120,35 +112,53 @@ input {
 
 /* Media Settings for Mobile Viewing
 -----------------------------------------------------------------------------*/
-@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-#header {
-	width: 30%;
-	height: 75%;
-	font-size: medium;
-}
+@media (max-width: 600px) {
+	#header {
+		height: 75%;
+		font-size: medium;
+	}
 
-#content2 {
-	width: 30%;
-	text-align: justify;
-	font-size: medium;
-}
+	#content {
+		width: auto;
+		margin: auto;
+		text-align: left;
+		font-size: medium;
+	}
+	#content2 {
+		width: auto;
+		margin: auto;
+		text-align: left;
+		font-size: medium;
+	}
 
-#footer {
-	font-size: small;
-	text-align:left;
-}
+	#footer {
+		font-size: small;
+		margin-left:auto;
+		margin-right:auto;
+	}
 
-h1 {
-	color: #B0E2FF;
-	font-size: x-large;
-	text-align: center;
-}
 
-h2 {
-	font-size: small;
-	text-align: center;
-}
+	#wrapper {
+		max-width: 600px;		
+	}
+	
+	h1 {
+		color: #FFFFCC;
+		font-size: x-large;
+		text-align: center;
+	}
 
-p {
-	font-size: medium;
-	text-align: justify;
+	h2 {
+		font-size: medium;
+		text-align: center;
+	}
+
+	p {
+		font-size: medium;
+		text-align: justify;
+	}
+
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+}
